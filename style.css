@@ -1,8 +1,15 @@
+html,
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #fafaff;
+  background-image: url(/images/wave.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   margin: 0;
   padding: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -14,35 +21,114 @@ header {
 }
 
 h1 {
-  background: linear-gradient(to right, #e60b09, #e9d022);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #334155;
+}
+
+.search-bar {
+  margin: 1rem;
 }
 
 .search {
   min-width: 200px;
   padding: 10px;
-  border: 3px solid;
-  border-image: linear-gradient(to right, #e60b09, #e9d022) 1;
+  border: 2px solid #64748b;
   border-radius: 4px;
-  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search:focus {
+  outline: none;
+  border: 2px solid #cbd5e1;
+  transition: 0.3s;
 }
 
 .search-btn {
-    padding: 11px;
-    background: #f8f9fa;
-    border: 2px solid #adb5bd;
-    border-radius: 3px;
-    cursor: pointer;
-    transition: 0.3s;
+  padding: 10px;
+  background: #cbd5e1;
+  border: 2px solid #cbd5e1;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .search-btn:hover {
-  padding: 11px;
-  background-color: #adb5bd;
-  border: 2px solid #adb5bd;
+  padding: 10px;
+  background-color: #64748b;
+  border: 2px solid #64748b;
   color: white;
   border-radius: 3px;
   cursor: pointer;
   transition: 0.3s;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.temperature-information {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid #cbd5e1;
+  border-radius: 1rem;
+}
+
+.temperature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+h2.temp {
+  font-weight: 900;
+  margin: 8px 0;
+  font-size: 2rem;
+  color: #334155;
+}
+
+.temp {
+  align-self: center;
+}
+
+.temperature-range {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.temperature-range > * {
+  font-weight: 400;
+  margin: 8px;
+  color: #94a3b8;
+}
+
+.other-information {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.other-information > * {
+  margin: 0.5rem;
+}
+
+h4 {
+  font-weight: 500;
+  color: #475569;
+}
+
+h4 span {
+  font-weight: 400;
+  color: #0f172a;
 }
