@@ -70,6 +70,10 @@ main {
   flex-direction: column;
 }
 
+.location-name {
+  color: #334155;
+}
+
 .temperature-information {
   display: flex;
   flex-wrap: wrap;
@@ -126,9 +130,4 @@ h2.temp {
 h4 {
   font-weight: 500;
   color: #475569;
-}
-
-h4 span {
-  font-weight: 400;
-  color: #0f172a;
 }
