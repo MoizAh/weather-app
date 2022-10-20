@@ -1,7 +1,7 @@
 html,
 body {
   font-family: "Roboto", sans-serif;
-  background-image: url(/images/wave.svg);
+  background-image: url(images/wave.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
