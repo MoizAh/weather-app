@@ -131,3 +131,18 @@ h4 {
   font-weight: 500;
   color: #475569;
 }
+
+.temperature-units {
+  margin: 1rem;
+}
+
+.celsius,
+.fahrenheit {
+  padding: 10px;
+  background: #cbd5e1;
+  border: 2px solid #cbd5e1;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-tap-highlight-color: transparent;
+}
